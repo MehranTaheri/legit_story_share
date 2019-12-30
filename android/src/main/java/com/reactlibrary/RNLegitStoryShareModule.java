@@ -161,7 +161,7 @@ public class RNLegitStoryShareModule extends ReactContextBaseJavaModule {
   private void _shareToInstagram(@Nullable File backgroundFile, @Nullable File stickerFile, @Nullable String attributionLink, @Nullable String backgroundBottomColor, @Nullable String backgroundTopColor, Promise promise){
     try {
       Intent intent = new Intent("com.instagram.share.ADD_TO_STORY");
-      String providerName = this.getReactApplicationContext().getPackageName() + ".fileprovider";
+      String providerName = this.getReactApplicationContext().getPackageName() + ".provider";
       Activity activity = getCurrentActivity();
 
       if(backgroundFile != null){
